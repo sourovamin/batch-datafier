@@ -12,7 +12,7 @@
 add_action('admin_menu', 'bdm_add_menu');
 
 function bdm_add_menu() {
-  add_menu_page( 'Batch Data Modifier', __('Batch Datafier', 'batch-datafier'), 'manage_options', 'bdm-main-menu','bdm_main_menu'); 
+  add_submenu_page( "users.php", "Batch Data Modifier", __("Batch Datafier", "batch-datafier"), "administrator", "bdm-main-menu", "bdm_main_menu"); 
 }
 
 function bdm_main_menu(){
